@@ -4,7 +4,7 @@
 # pig_it('Pig latin is cool') # igPay atinlay siay oolcay
 # pig_it('Hello world !')     # elloHay orldway !
 
-def pig_it(text):
+"""def pig_it(text):
     arr2 = ["!",",",".","?"]
     temp_arr =[]
     z =' '
@@ -21,9 +21,12 @@ def pig_it(text):
     return " ".join(temp_arr)
 
 
-print(pig_it('Hello world !'))    
+print(pig_it('Hello world !')) """   
 #igPay atinlay siay oolcay 
 
-# def pig_it(text):
-#     lst = text.split()
-#     return ' '.join( [word[1:] + word[:1] + 'ay' if word.isalpha() else word for word in lst])
+def pig_it(text):
+    lst = text.split()
+    return ' '.join( [word[1:] + word[:1] + 'ay' if word.isalpha() else word for word in lst])
+
+
+print(pig_it('Pig latin is cool'))
